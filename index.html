@@ -4,48 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Eduardo Abrahão</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <title>Eduardo Abrahão - Desenvolvedor FullStack</title>
+    <!-- Link para o css do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Link para o css feito por mim -->
+    <link href=".\style.css" rel="stylesheet">
+    <!-- Link do google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
 <body>
-    <img src="eu.jpg">
-    <h1>Eduardo Ribeiro Silva Abrahão</h1>
-        <p>Brasileiro, 25 anos, Solteiro</p>
-        <p>Campinas- SP</p>
-    <h2>Resumo Profissional</h2>
-        <p>Graduado em engenharia elétrica na UNESP de Ilha Solteira, conclusão
-            em março/2021. Experiência em sistemas de distribuição de energia
-            elétrica durante 2 anos de estágio, realizando acompanhamentos,
-            relatórios e projetos de melhoria nas questões operacionais, financeiras
-            e de produtividade da distribuidora. Atualmente estou buscando
-            oportunidades no mercado de trabalho na área de energia elétrica
-            para ampliar meus conhecimentos e contribuir para o desenvolvimento
-            da empresa.</p> 
-    <h2>Experiência Profissional</h2>
-        <h5>Jan/2020-Fev/2021. Campinas/sp</h5>
-            <p>As responsabilidades diárias eram direcionar os principais serviços das
-                equipes de equipamentos especiais (Religadores, Banca Capacitor,
-                Regulador de tensão e outros) para a programação que era realizada
-                através de extração de informações de bancos de dados (SQL) e
-                analisadas no Excel que visava garantir os melhores serviços. Além disso,
-                Elaboração de relatórios financeiros para a área da operação da
-                distribuição, como OPEX e CAPEX, gastos e investimentos que as
-                equipes realizavam para garantir a manutenção e projetos de melhoria
-                da rede de energia elétrica e Gerenciamento de relatório de
-                produtividade das equipes da empresa.</p>
-        <h5>Fev/2019-Dez/2020. Itapeva/sp</h5>
-            <p>Estágio com o objetivo de adquirir experiência e conhecimento sobre
-                    os processos de distribuição de energia elétrica. As principais
-                    responsabilidades eram auxiliar a liderança nos indicadores
-                    estratégicos da empresa através da elaboração de
-                    acompanhamentos e projeções dos resultados utilizando Excel e
-                    Access, auxiliar o engenheiro de obras nas questões do plano de
-                    manutenção da rede de distribuição e trabalhar em soluções com o
-                    time de logística da região. Além disso, auxiliar os técnicos com os
-                    assuntos relacionados com as empresas prestadoras garantindo que o
-                    serviço fosse realizado corretamente e de forma eficiente.</p>
-    <footer>
-        <p>COPYRIGHT © 2021, Eduardo Abrahão</p>
-    </footer>            
+  <!-- Barra de navegação superior do bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+      <div class="container-fluid navbar-color">
+        <a class="navbar-brand" href=".\index.html">Eduardo Abrahão</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href=".\curriculo.html">Currículo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".\projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Guia de estudo
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href=".\hardskills.html">Hardskills</a></li>
+                <li><a class="dropdown-item" href=".\softskills.html">Softskills</a></li>
+                <li><a class="dropdown-item" href=".\ingles.html">Inglês</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".\contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Cabeçalho da pagina principal -->
+  <header class="text-center">
+    <h1 class="text-space-white">Pagina Principal</h1>
+    <h4 class="text-space-white">Eduardo Abrahão</h4>
+    <button type="button" class="btn btn-success">Entre em contato</button>
+  </header>
+
+  <!-- Primeiro grid explicando sobre o meu perfil e resumo profissional -->
+  <section class="clearfix">
+    <i class="material-icons img-container-r" style="font-size:300px;color: green" >account_box</i>
+    <h1>Resumo Profissional</h1>
+    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dolore laborum, similique cupiditate eligendi iusto ullam sequi laboriosam deserunt facere praesentium. Assumenda voluptatibus non quibusdam obcaecati numquam magni similique accusamus!</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dolore laborum, similique cupiditate e</p>
+    <button type="button" class="btn btn-light">Ir para o Curriculo</button>
+  </section>
+
+  <!-- Segundo grid mostrando um resumo dos meus projetos. -->
+  <section class="clearfix">
+    <i class="material-icons img-container-l" style="font-size:300px;color: green" >source</i>
+    <h1>Projetos pessoais</h1>
+    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dolore laborum, similique cupiditate eligendi iusto ullam sequi laboriosam deserunt facere praesentium. Assumenda voluptatibus non quibusdam obcaecati numquam magni similique accusamus!</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dolore laborum, similique cupiditate e</p>
+    <button type="button" class="btn btn-light">Ir para os projetos</button> 
+  </section>
+
+  <!-- Rodape da pagina -->
+  <footer>
+    <p>COPYRIGHT © 2021, Eduardo Abrahão</p>
+  </footer>
+  <!-- Link para bootstrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>

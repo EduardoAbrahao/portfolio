@@ -1,25 +1,80 @@
-img:hover{
-    transform: scale(1.1);    
+/* Estilos que são aplicados em todas as páginas */
+.navbar-color {
+    background-color: #148c14;
+    color: white;
 }
 
-img{
-    transition: all 1s;
-    float: left;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow:gray 0px 0px 10px ;   
+body{
+    background:#c7f1c6;
 }
-
-h2{
-    border-bottom: 2px solid royalblue;
-    border-right: 2px solid royalblue;
-    margin: auto;
-    box-shadow: 5px 5px 5px rgb(22, 20, 22);
-}
-
 footer{
-    background-color: rgb(89, 85, 138);
-    padding: 5px;
-    text-align:center;
+    background:#148c14;
+    text-align: center;
+    padding: 50px;
+    color: white;
 }
 
+/* Estilos da pagina principal */
+.text-center{
+    text-align: center;
+    background-color:#148c14;
+    height: 500px;
+}
+
+.text-space-white{
+    padding: 25px;
+    color: white;
+}
+
+.img-container-l{
+    float: left;
+}
+
+.img-container-r{
+    float: right;
+
+}
+
+
+/* Estilos que são aplicadas apenas na pagina do currículo */
+.container{
+    display: grid;
+    margin: 5px 35px;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+.container-one{
+    width: auto;
+    background-color: white;
+    box-shadow: 0 0 1em grey;
+    padding: 20px;
+}
+.container-two{
+    width: auto;
+    background-color: white;
+    box-shadow: 0 0 1em grey;
+    padding: 20px;
+    text-align: justify ;
+}
+
+section{
+    border-bottom: solid lightgreen 1px;
+}
+
+.main-img{
+    background: url("./eu.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-over-img{
+    text-align: justify;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #112309;
+}
